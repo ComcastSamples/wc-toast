@@ -11,14 +11,15 @@
   <style>
     body {
       color: red;
-      --wc-toast-color: blue;
+      --wc-toast-color: #FFF;
+      --wc-toast-background: #0d47a1;
     }
   </style>
 </head>
 
 <body role="main">
   <button id="toggle">Open Toast</button>
-  <wc-toast>My Toast Message</wc-toast>
+  <wc-toast duration="3">My Toast Message</wc-toast>
 
   <script>
     document.querySelector('#toggle').addEventListener('click', e => {

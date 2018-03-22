@@ -1,13 +1,13 @@
 # Introduction to Web Components via a Toast
 
-## Step 4
+## Step 5
 
-In Step 4 we're going to add a duration attribute to auto close
-the toast after duration. Refer [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements) for how to work attributes.
+In Step 5 we're going to do some optimizations with the template tag. Refer to [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements#fromtemplate) for how to work with template tags.
 
-1. Observe the attribute duration
-2. Create `attributeChangedCallback` function to set `this.duration` to the attribute value
-3. Update `open` function to setTimeout to call close using duration if duration is set
+1. Create a static cache property which returns an object to store our template
+2. Move our template html into a static template function
+3. Update our constructor to get the template from the cache and if its not there, create a template element with our template markup and put it in the cache object. Use the class name as the key.
+4. Clone the template node and append it to the shadowRoot
 
 ### Questions?
 
