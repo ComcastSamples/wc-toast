@@ -17,6 +17,13 @@
 </head>
 
 <body role="main">
-  <wc-toast>Chris</wc-toast>
+  <button id="toggle">Open Toast</button>
+  <wc-toast>My Toast Message</wc-toast>
+
+  <script>
+    document.querySelector('#toggle').addEventListener('click', e => {
+      document.querySelector('wc-toast').open();
+    });
+  </script>
 </body>
 </html>
