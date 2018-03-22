@@ -1,13 +1,12 @@
 # Introduction to Web Components via a Toast
 
-## Step 2
+## Step 3
 
-In Step 2 we're going to be adding shadow dom to our custom element. To learn more
-about shadow dom check out [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/web-components/shadowdom) by Eric Bidelman.
+In Step 3 we're going to make the toast work.
 
-1. Create a shadowRoot for your custom element and add Hello World into it
-2. Add a slot element and add your name in `<wc-toast>Chris</wc-toast>` so it prints Hello Chris
-3. Add a custom property --wc-toast-color to set the color of the text
+1. Add an open method which sets className to `open`
+2. Create a close method which sets className to `close`
+3. Add a div.close(X) with click handler to call the close method.
 
 ### Questions?
 
