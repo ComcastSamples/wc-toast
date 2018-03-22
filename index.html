@@ -8,15 +8,14 @@
 
   <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
   <script src="wc-toast.js"></script>
+  <style>
+    body {
+      color: red;
+    }
+  </style>
 </head>
 
 <body role="main">
-  <button id="toggle">Open Toast</button>
-  <wc-toast duration="3">Chris!</wc-toast>
+  <wc-toast></wc-toast>
 </body>
-  <script>
-    document.querySelector('#toggle').addEventListener('click', e => {
-      document.querySelector('wc-toast').open();
-    });
-  </script>
 </html>

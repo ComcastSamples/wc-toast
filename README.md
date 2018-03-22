@@ -1,13 +1,14 @@
 # Introduction to Web Components via a Toast
 
-## Step 1
+## Step 2
 
-In Step 1 we're going to be creating a `wc-toast` custom element. To learn more
-about custom elements check out [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements) by Eric Bidelman.
+In Step 2 we're going to be adding shadow dom to our custom element. To learn more
+about shadow dom check out [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/web-components/shadowdom) by Eric Bidelman.
 
-1. Run `npm start` to start up local web server
-2. Open `wc-toast.js` in code editor of your choice ([VSCode](https://code.visualstudio.com/) recommended).
-3. Create a wc-toast custom element that prints Hello World
+1. Create a shadowRoot for your custom element and add Hello World into it
+2. Add a slot element and add your name in `<wc-toast>Chris</wc-toast>` so it prints Hello Chris
+3. Add a custom property --wc-toast-color to set the color of the text
+
 ### Questions?
 
 Please reach out to us on Twitter, we're happy to help :-)

@@ -4,7 +4,7 @@ class WCToast extends HTMLElement {
   }
 
   connectedCallback() {
-
+    this.innerHTML = 'Hello World';
   }
 }
 window.customElements.define('wc-toast', WCToast);
