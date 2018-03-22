@@ -1,18 +1,13 @@
 # Introduction to Web Components via a Toast
 
-### Hello! :wave:
+## Step 1
 
-Thanks for coming to our hands-on introduction to Web Components & Polymer! If you stumbled onto this and weren't at the event, hopefully this is still of somewhat use :-)
+In Step 1 we're going to be creating a `wc-toast` custom element. To learn more
+about custom elements check out [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements) by Eric Bidelman.
 
-This is all the materials that are required to get started:
-
-1. [Install Git](https://git-scm.com/download/)
-2. [Install Node and npm](https://nodejs.org/en/download/) (If you'd like to manage multiple version of Node, we recommend [nvm](https://nodejs.org/en/download/))
-3. Install the Polymer CLI globally: `$ npm install -g polymer-cli`
-4. Clone this repo (`$ git clone https://github.com/ComcastSamples/wc-toast.git`)
-5. Install the dependencies by `$ npm install` from the directory you cloned `wc-toast` into
-6. `$ git checkout step1` to get started.
-
+1. Run `npm start` to start up local web server
+2. Open `wc-toast.js` in code editor of your choice ([VSCode](https://code.visualstudio.com/) recommended).
+3. Create a wc-toast custom element that prints Hello World
 ### Questions?
 
 Please reach out to us on Twitter, we're happy to help :-)
