@@ -47,6 +47,7 @@ markup (innerHTML) to the following:
 1. Add an open method which sets className to `open`
 2. Create a close method which sets className to `close`
 3. Add a click handler on div.close to call the close method.
+4. Make sure it works by inspecting wc-toast in the dom and `$0.open()` in the console, your toast should appear on the screen.
 
 ### Questions?
 
