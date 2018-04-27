@@ -44,10 +44,13 @@ markup (innerHTML) to the following:
 <slot></slot>
 ```
 
-1. Add an open method which sets className to `open`
+Please note that JS Classes do not need the `function` keyword.
+Read more about [JS Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+1. Add an open method which sets className [docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) to `open`
 2. Create a close method which sets className to `close`
-3. Add a click handler on div.close to call the close method.
-4. Make sure it works by inspecting wc-toast in the dom and `$0.open()` in the console, your toast should appear on the screen.
+3. Add a click handler with `addEventListener` [docs](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on div.close to call the close method.
+4. Make sure it works by inspecting wc-toast in the dom (right click + inspect) and run `$0.open()` in the console, your toast should appear on the screen.
 
 ### Questions?
 
