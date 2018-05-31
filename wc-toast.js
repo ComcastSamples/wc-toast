@@ -72,14 +72,16 @@ class WCToast extends HTMLElement {
   }
 
   open() {
-    this.className = 'open';
+    this.classList.remove('close');
+    this.classList.add('open');
     if (this.duration) {
       setTimeout(_ => this.close(), this.duration * 1000);
     }
   }
 
   close() {
-    this.className = 'close';
+    this.classList.remove('open');
+    this.classList.add('close');
   }
 }
 window.customElements.define('wc-toast', WCToast);

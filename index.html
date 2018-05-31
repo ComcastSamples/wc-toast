@@ -9,20 +9,32 @@
   <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
   <script src="wc-toast.js"></script>
   <style>
-    wc-toast {
-      --wc-toast-color: #FFF;
-      --wc-toast-background: #0d47a1;
+    body {
+      color: black;
+      --wc-toast-background: blue;
+    }
+
+    wc-toast.right {
+      right: 30px;
+    }
+
+     wc-toast.left {
+      left: 30px;
     }
   </style>
 </head>
 
 <body role="main">
+  <h1>Our Completed Toasts!</h1>
+
   <button id="toggle">Open Toast</button>
-  <wc-toast duration="3">Chris!</wc-toast>
-</body>
+  <wc-toast duration="5" class="right">Right side Toast</wc-toast>
+  <wc-toast duration="3" class="left">I'm on the Left</wc-toast>
+
   <script>
     document.querySelector('#toggle').addEventListener('click', e => {
-      document.querySelector('wc-toast').open();
+      document.querySelectorAll('wc-toast').forEach(wc => wc.open());
     });
   </script>
+</body>
 </html>
