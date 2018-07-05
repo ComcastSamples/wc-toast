@@ -44,6 +44,13 @@ class WCToast extends HTMLElement {
     this.root.querySelector('.close').addEventListener('click', e => this.close());
   }
 
+  static get observedAttributes() {
+    return [];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+  }
+
   open() {
     this.className = 'open';
   }
