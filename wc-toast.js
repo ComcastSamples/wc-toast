@@ -15,6 +15,7 @@ class WCToast extends HTMLElement {
         }
         ::slotted(.title) {
            color: orange;
+           border-top: 2px solid green;
         }
         ::slotted(.company) {
           display: block;
