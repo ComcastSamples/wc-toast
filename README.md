@@ -1,15 +1,15 @@
 # Introduction to Web Components via a Toast
 
-## Step 2a
+## Step 2b
 
-Expanded details on Shadow Dom!
+Slots + Shadow Dom!
 
 To learn more
 about shadow dom check out [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/web-components/shadowdom) by Eric Bidelman.
 
-1. Open vs Closed - elm.shadowRoot [more details](https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af)
-2. document.querySelector with shadow dom
-3. [Styling based on context](https://developers.google.com/web/fundamentals/web-components/shadowdom#contextstyling)
+1. [Styling Slotted Elements](https://developers.google.com/web/fundamentals/web-components/shadowdom#stylinglightdom)
+2. [Named Slots](https://developers.google.com/web/fundamentals/web-components/shadowdom#slots)
+
 
 ### Questions?
 

@@ -10,24 +10,27 @@
   <script src="wc-toast.js"></script>
   <style>
     body {
-      color: red;
+      color: black;
     }
     wc-toast {
       display: block;
+      margin: 40px 0;
       --wc-toast-color: blue;
     }
   </style>
 </head>
 
-<body role="main" class="light">
-  <h1>Oh No - Red text Everywhere!</h1>
-  <p>Lets use shadow dom to fix up our CSS.
-    <a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/shadowdom#create">Create a shadow dom!</a>
-    <br>Hint - you can put &lt;style&gt; tags into the shadowRoot
+<body role="main">
+  <p>Slotted Elements
+    <a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/shadowdom#create">with a shadow dom!</a>
   </p>
 
-  <wc-toast>Chris!</wc-toast>
+  <wc-toast>
+    <h2>Chris Lorenzo</h2>
+    <span class="title">
+      Distinguished Engineer, <span class="company">Comcast</span>
+    </span>
+  </wc-toast>
 
-  <p>When done, proceed to step3... "git checkout -f step3"</p>
 </body>
 </html>

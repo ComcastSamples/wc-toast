@@ -7,12 +7,26 @@ class WCToast extends HTMLElement {
         :host {
           color: var(--wc-toast-color, #000);
         }
-        :host-context(.dark) {
-          color: white;
-          background: black;
+        ::slotted(h2) {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 300;
+          color: red;
+        }
+        ::slotted(.title) {
+           color: orange;
+        }
+        ::slotted(.company) {
+          display: block;
+          color: green;
+        }
+        /* DOESN'T WORK (can only select top-level nodes). */
+        ::slotted(.company),
+        ::slotted(.title .company) {
+          text-transform: uppercase;
         }
       </style>
-      <p id='helloToast'>Hello <slot></slot></p>
+      <slot></slot>
     `;
   }
 }
