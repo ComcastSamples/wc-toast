@@ -1,56 +1,15 @@
 # Introduction to Web Components via a Toast
 
-## Step 3
+## Step 2a
 
-In Step 3 we're going to make the toast work. Start by updating your
-markup (innerHTML) to the following:
+Expanded details on Shadow Dom!
 
-```html
-<style>
-  :host {
-    background-color: var(--wc-toast-background, #d84315);
-    bottom: 0;
-    box-sizing: border-box;
-    color: var(--wc-toast-color, #fff);
-    display: block;
-    opacity: 0;
-    padding: 20px 40px;
-    position: fixed;
-    text-align: left;
-    transform: translateY(100px);
-    z-index: 10000;
-  }
+To learn more
+about shadow dom check out [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/web-components/shadowdom) by Eric Bidelman.
 
-  :host(.open) {
-    opacity: 1;
-    transform: translateY(-20px);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
-
-  :host(.close) {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
-
-  .close {
-    cursor: pointer;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-  }
-</style>
-<div class="close">X</div>
-<slot></slot>
-```
-
-Please note that JS Classes do not need the `function` keyword.
-Read more about [JS Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-
-1. Add an open method which sets className [docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) to `open`
-2. Create a close method which sets className to `close`
-3. Add a click handler with `addEventListener` [docs](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on div.close to call the close method.
-4. Make sure it works by inspecting wc-toast in the dom (right click + inspect) and run `$0.open()` in the console, your toast should appear on the screen.
+1. Open vs Closed - elm.shadowRoot [more details](https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af)
+2. document.querySelector with shadow dom
+3. [Styling based on context](https://developers.google.com/web/fundamentals/web-components/shadowdom#contextstyling)
 
 ### Questions?
 

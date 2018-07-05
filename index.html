@@ -11,16 +11,23 @@
   <style>
     body {
       color: red;
-      --wc-toast-color: #fff;
-      --wc-toast-background: blue;
+    }
+    wc-toast {
+      display: block;
+      --wc-toast-color: blue;
     }
   </style>
 </head>
 
-<body role="main">
-  <h1>Making some toast for real!</h1>
-  <wc-toast>Toast!</wc-toast>
+<body role="main" class="light">
+  <h1>Oh No - Red text Everywhere!</h1>
+  <p>Lets use shadow dom to fix up our CSS.
+    <a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/shadowdom#create">Create a shadow dom!</a>
+    <br>Hint - you can put &lt;style&gt; tags into the shadowRoot
+  </p>
 
-  <p>When you get the toast to open, proceed to "git checkout -f step4"</p>
+  <wc-toast>Chris!</wc-toast>
+
+  <p>When done, proceed to step3... "git checkout -f step3"</p>
 </body>
 </html>
