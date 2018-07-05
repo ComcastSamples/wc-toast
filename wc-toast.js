@@ -1,7 +1,7 @@
 class WCToast extends HTMLElement {
   constructor() {
     super(); // always call super() first in the constructor
-    this.root = this.attachShadow({mode: 'open'});
+    this.root = this.attachShadow({mode: 'closed'});
     this.root.innerHTML = `
       <style>
         :host {
@@ -9,7 +9,7 @@ class WCToast extends HTMLElement {
         }
         :host-context(.dark) {
           color: white;
-          background: black;
+          background: #999;
         }
       </style>
       <p id='helloToast'>Hello <slot></slot></p>

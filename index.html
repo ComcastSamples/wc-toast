@@ -12,6 +12,11 @@
     body {
       color: red;
     }
+
+    body.dark {
+      background: black;
+    }
+
     wc-toast {
       display: block;
       --wc-toast-color: blue;
@@ -19,15 +24,14 @@
   </style>
 </head>
 
-<body role="main" class="light">
-  <h1>Oh No - Red text Everywhere!</h1>
-  <p>Lets use shadow dom to fix up our CSS.
-    <a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/shadowdom#create">Create a shadow dom!</a>
-    <br>Hint - you can put &lt;style&gt; tags into the shadowRoot
+<body role="main" class="">
+
+  <p>Advanced
+    <a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/shadowdom#create">shadow dom!</a>
   </p>
 
   <wc-toast>Chris!</wc-toast>
 
-  <p>When done, proceed to step3... "git checkout -f step3"</p>
+
 </body>
 </html>
