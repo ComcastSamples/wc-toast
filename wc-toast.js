@@ -1,6 +1,24 @@
-class WCToast extends HTMLElement {
-  static get template() {
-    return `
+import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module';
+
+class WCToast extends LitElement {
+  static get properties() {
+    return {
+      duration: Number,
+      name: String,
+      isOpen: {
+        type: Boolean,
+        reflect: true
+      },
+     }
+  }
+
+  constructor() {
+    super();
+    this.close = this.close.bind(this);
+  }
+
+  render() {
+    return html`
       <style>
         :host {
           background-color: var(--wc-toast-background, #d84315);
@@ -16,16 +34,17 @@ class WCToast extends HTMLElement {
           z-index: 10000;
         }
 
-        :host(.open) {
+        :host([isopen]) {
           opacity: 1;
           transform: translateY(-20px);
           transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
-
-        :host(.close) {
-          opacity: 0;
-          transform: translateY(100px);
-          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        ${this.beenOpened && html`
+          :host {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          }`
         }
 
         .close {
@@ -35,53 +54,23 @@ class WCToast extends HTMLElement {
           top: 4px;
         }
       </style>
-      <div class="close">X</div>
+      <div @click=${this.close} class="close">X</div>
+      ${this.name}
       <slot></slot>
     `;
   }
 
-  static get cache() {
-    this._cache = this._cache || {};
-    return this._cache;
-  }
-
-  constructor() {
-    super(); // always call super() first in the constructor
-
-    let template = this.constructor.cache[this.constructor.name];
-    if (!template) {
-      template = document.createElement('template');
-      template.innerHTML = this.constructor.template;
-      this.constructor.cache[this.constructor.name] = template;
-    }
-
-    let node = template.content.cloneNode(true);
-    this.root = this.attachShadow({mode: 'open'});
-    this.root.appendChild(node);
-    this.root.querySelector('.close').addEventListener('click', e => this.close());
-  }
-
-  static get observedAttributes() {
-    return ['duration'];
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (name === 'duration') {
-      this.duration = newValue;
-    }
-  }
-
   open() {
-    this.classList.remove('close');
-    this.classList.add('open');
+    this.isOpen = true;
+    this.beenOpened = true;
+
     if (this.duration) {
       setTimeout(_ => this.close(), this.duration * 1000);
     }
   }
 
   close() {
-    this.classList.remove('open');
-    this.classList.add('close');
+    this.isOpen = false;
   }
 }
 window.customElements.define('wc-toast', WCToast);
