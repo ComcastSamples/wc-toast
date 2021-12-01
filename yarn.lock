@@ -3,15 +3,6 @@
 
 
 "@webcomponents/webcomponentsjs@^1.1.0":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.2.6.tgz#5d71fea4a5677b8c1a2118d55f8b286fd522f632"
-
-lit-element@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-0.5.0.tgz#88d42fba7bd8fab454f5bf2057973a5edee27010"
-  dependencies:
-    lit-html "^0.10.0"
-
-lit-html@^0.10.0:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-0.10.2.tgz#53c846afcf91bb1e6623179ef22e327ab8ac0e0e"
+  "integrity" "sha512-7toNyVlrl7vJnY3PU0eXIK1KWq8phfnEe1IwOdCMxkIl/BfUkUB2aaVs45R0LSx1qxHRnkqj0vlGtskUvKkNkA=="
+  "resolved" "https://registry.npmjs.org/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.1.0.tgz"
+  "version" "1.1.0"

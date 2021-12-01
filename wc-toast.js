@@ -1,4 +1,4 @@
-import {LitElement, html} from 'https://unpkg.com/lit-element@latest/lit-element.js?module';
+import {LitElement, html} from 'https://unpkg.com/lit@latest/index.js?module';
 
 class WCToast extends LitElement {
   static get properties() {
