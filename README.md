@@ -2,16 +2,15 @@
 
 ### Hello! :wave:
 
-Thanks for coming to our hands-on introduction to Web Components & Polymer! If you stumbled onto this and weren't at the event, hopefully this is still of somewhat use :-)
+Thanks for coming to our hands-on introduction to Web Components & Lit! If you stumbled onto this and weren't at the event, hopefully this is still of somewhat use :-)
 
 This is all the materials that are required to get started:
 
 1. [Install Git](https://git-scm.com/download/)
 2. [Install Node and npm](https://nodejs.org/en/download/) (If you'd like to manage multiple version of Node, we recommend [nvm](https://nodejs.org/en/download/))
-3. Install the Polymer CLI globally: `$ npm install -g polymer-cli`
-4. Clone this repo (`$ git clone https://github.com/ComcastSamples/wc-toast.git`)
-5. Install the dependencies by `$ npm install` from the directory you cloned `wc-toast` into
-6. `$ git checkout step1` to get started.
+3. Clone this repo (`$ git clone https://github.com/ComcastSamples/wc-toast.git`)
+4. Install the dependencies by `$ npm install` from the directory you cloned `wc-toast` into
+5. `$ git checkout step1` to get started.
 
 ### Questions?
 
