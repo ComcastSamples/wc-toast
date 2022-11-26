@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Toast Web Component",
   "main": "wc-toast.js",
-  "dependencies": {
-    "@webcomponents/webcomponentsjs": "^1.1.0"
+  "devDependencies": {
+    "http-server": "^14.1.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "polymer serve --open",
+    "start": "http-server -o",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +15,7 @@
     "url": "git+https://github.com/ComcastSamples/wc-toast.git"
   },
   "author": "Chris Lorenzo",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ComcastSamples/wc-toast/issues"
   },
