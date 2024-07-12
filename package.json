@@ -1,15 +1,17 @@
 {
   "name": "wc-toast",
-  "version": "1.0.0",
-  "description": "Toast Web Component",
+  "version": "2.0.0",
+  "description": "Toast Web Component, Lit edition",
   "main": "wc-toast.js",
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^1.1.0"
+    "lit": "^3.1.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  },
   "scripts": {
-    "start": "polymer serve --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "web-dev-server --node-resolve --open",
+    "watch": "web-dev-server --node-resolve --open --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/ComcastSamples/wc-toast/issues"
   },
-  "homepage": "https://github.com/ComcastSamples/wc-toast#readme"
+  "homepage": "https://github.com/ComcastSamples/wc-toast/tree/lit#readme"
 }

@@ -2,16 +2,9 @@
 
 ### Hello! :wave:
 
-Thanks for coming to our hands-on introduction to Web Components & Polymer! If you stumbled onto this and weren't at the event, hopefully this is still of somewhat use :-)
+This `lit` branch shows how to build the Toast component using [Lit](https://lit.dev/)
 
-This is all the materials that are required to get started:
-
-1. [Install Git](https://git-scm.com/download/)
-2. [Install Node and npm](https://nodejs.org/en/download/) (If you'd like to manage multiple version of Node, we recommend [nvm](https://nodejs.org/en/download/))
-3. Install the Polymer CLI globally: `$ npm install -g polymer-cli`
-4. Clone this repo (`$ git clone https://github.com/ComcastSamples/wc-toast.git`)
-5. Install the dependencies by `$ npm install` from the directory you cloned `wc-toast` into
-6. `$ git checkout step1` to get started.
+The other change is it uses [Modern Web's Web Dev Server](https://modern-web.dev/docs/dev-server/overview/) to run it locally, so be sure to `npm install` this branch if you want to give developing web components with Lit a try, which we highly recommend you do!
 
 ### Questions?
 
